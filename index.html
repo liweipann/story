@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liwei's Picture Book</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Liwei's Magical Adventure</h1>
+  </header>
+
+  <nav>
+    <a href="#scene1">Scene 1</a>
+    <a href="#scene2">Scene 2</a>
+    <a href="#scene3">Scene 3</a>
+    <a href="#scene4">Scene 4</a>
+    <a href="#scene5">Scene 5</a>
+    <a href="#scene6">Scene 6</a>
+    <a href="#scene7">Scene 7</a>
+    <a href="#scene8">Scene 8</a>
+    <a href="#scene9">Scene 9</a>
+    <a href="#scene10">Scene 10</a>
+  </nav>
+
+  <main>
+    <section id="scene1">
+      <h2>Scene 1</h2>
+      <img src="image121.jpg" alt="Scene 1 image" />
+      <p>Liwei wakes up to a windy morning...</p>
+    </section>
+    <section id="scene2">
+      <h2>Scene 2</h2>
+      <img src="image211.jpg" alt="Scene 2 image" />
+      <p>The magic leaf talks to Liwei...</p>
+    </section>
+    <section id="scene3">
+      <h2>Scene 3</h2>
+      <img src="image311.jpg" alt="Scene 3 image" />
+      <p>They enter the forest filled with animals...</p>
+    </section>
+    <section id="scene4">
+      <h2>Scene 4</h2>
+      <img src="image411.jpg" alt="Scene 4 image" />
+      <p>Liwei meets the crying tree...</p>
+    </section>
+    <section id="scene5">
+      <h2>Scene 5</h2>
+      <img src="image511.jpg" alt="Scene 5 image" />
+      <p>Liwei listens and hugs the tree...</p>
+    </section>
+    <section id="scene6">
+      <h2>Scene 6</h2>
+      <img src="image611.jpg" alt="Scene 6 image" />
+      <p>They clean the dirty river together...</p>
+    </section>
+    <section id="scene7">
+      <h2>Scene 7</h2>
+      <img src="image711.jpg" alt="Scene 7 image" />
+      <p>Animals join in the cleanup parade...</p>
+    </section>
+    <section id="scene8">
+      <h2>Scene 8</h2>
+      <img src="image811.jpg" alt="Scene 8 image" />
+      <p>Liwei receives seeds to plant...</p>
+    </section>
+    <section id="scene9">
+      <h2>Scene 9</h2>
+      <img src="image911.jpg" alt="Scene 9 image" />
+      <p>He plants them back at home...</p>
+    </section>
+    <section id="scene10">
+      <h2>Scene 10</h2>
+      <img src="image111.jpg" alt="Scene 10 image" />
+      <p>The garden grows, and Liwei smiles...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Liwei's Picture Book. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
